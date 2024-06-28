@@ -65,4 +65,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="pay_screen">결제 화면</string>
+    <string name="askOnce">1회 질문</string>
+    <string name="sub_monthly">월별 구독</string>
 </resources>

@@ -11,7 +11,7 @@
 
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.example.zippt.ui.main.home.ChatFragment"
+        android:name="com.example.zippt.ui.main.chat.ChatFragment"
         android:label="chatFragment"/>
 
     <fragment
@@ -23,4 +23,9 @@
         android:id="@+id/profileFragment"
         android:name="com.example.zippt.ui.main.profile.ProfileFragment"
         android:label="profileFragment"/>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.zippt.ui.main.chat.QuestionFragment"
+        tools:layout="@layout/fragment_question" />
 </navigation>

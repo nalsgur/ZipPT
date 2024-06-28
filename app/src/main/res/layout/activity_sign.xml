@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/sign_id"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="120dp" />
+
+    <ImageView
+        android:id="@+id/sign_id_inputbox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:src="@drawable/login_input"
+        app:layout_constraintTop_toBottomOf="@id/sign_id"
+        app:layout_constraintStart_toStartOf="@id/sign_id"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="아아디를 입력하세요."
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@id/sign_id_inputbox"
+        app:layout_constraintTop_toTopOf="@id/sign_id_inputbox"
+        app:layout_constraintBottom_toBottomOf="@id/sign_id_inputbox"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/sign_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패스워드"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/sign_id_inputbox"
+        app:layout_constraintStart_toStartOf="@id/sign_id"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/sign_pw_inputbox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:src="@drawable/login_input"
+        app:layout_constraintTop_toBottomOf="@id/sign_pw"
+        app:layout_constraintStart_toStartOf="@id/sign_pw"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="패스워드를 입력하세요"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@id/sign_pw_inputbox"
+        app:layout_constraintTop_toTopOf="@id/sign_pw_inputbox"
+        app:layout_constraintBottom_toBottomOf="@id/sign_pw_inputbox"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/sign_checkpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패스워드 확인"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/sign_pw_inputbox"
+        app:layout_constraintStart_toStartOf="@id/sign_pw"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/sign_checkpw_inputbox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:src="@drawable/login_input"
+        app:layout_constraintTop_toBottomOf="@id/sign_checkpw"
+        app:layout_constraintStart_toStartOf="@id/sign_checkpw"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="패스워드를 입력하세요."
+        app:layout_constraintStart_toStartOf="@id/sign_checkpw_inputbox"
+        app:layout_constraintTop_toTopOf="@id/sign_checkpw_inputbox"
+        app:layout_constraintBottom_toBottomOf="@id/sign_checkpw_inputbox"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/sign_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/sign_checkpw_inputbox"
+        app:layout_constraintStart_toStartOf="@id/sign_checkpw"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/sign_nickname_inputbox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:src="@drawable/login_input"
+        app:layout_constraintTop_toBottomOf="@id/sign_nickname_tv"
+        app:layout_constraintStart_toStartOf="@id/sign_nickname_tv"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="닉네임을 입력하세요."
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@id/sign_nickname_inputbox"
+        app:layout_constraintTop_toTopOf="@id/sign_nickname_inputbox"
+        app:layout_constraintBottom_toBottomOf="@id/sign_nickname_inputbox"
+        android:layout_marginLeft="20dp" />
+
+
+
+    <ImageView
+        android:id="@+id/sign_signbtn"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/sign_btn"
+        app:layout_constraintTop_toBottomOf="@id/sign_nickname_inputbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/sign_signbtn"
+        app:layout_constraintEnd_toEndOf="@id/sign_signbtn"
+        app:layout_constraintTop_toTopOf="@id/sign_signbtn"
+        app:layout_constraintBottom_toBottomOf="@id/sign_signbtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

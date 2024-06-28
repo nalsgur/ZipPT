@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_trainer1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="470dp"
+                android:src="@drawable/profiletrainer1"
+                android:scaleType="fitStart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/profile_stars_img"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:src="@drawable/profile_stars_img"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_trainer1_img"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_count_stars_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(4.0/5.0) 100+"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/profile_stars_img"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_trainer_name_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김피티"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                app:layout_constraintTop_toBottomOf="@id/profile_trainer1_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_belong_to_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시리우스"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/profile_trainer_name_tx"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_career_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피티경력"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_belong_to_tx"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_career_personal_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15년"
+                android:textColor="@color/darkgray"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_belong_to_tx"
+                app:layout_constraintStart_toEndOf="@id/profile_career_tx"/>
+
+            <TextView
+                android:id="@+id/profile_license_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자격검증"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_career_tx"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_license_personal_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15개 [국가공인자격]"
+                android:textColor="@color/darkgray"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_career_tx"
+                app:layout_constraintStart_toEndOf="@id/profile_license_tx"/>
+
+            <TextView
+                android:id="@+id/profile_field_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전문분야"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_license_tx"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_field_personal_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기능개선, 대회준비, 바디프로필"
+                android:textColor="@color/darkgray"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_license_tx"
+                app:layout_constraintStart_toEndOf="@id/profile_field_tx"/>
+
+            <TextView
+                android:id="@+id/profile_price_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문가격"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_field_tx"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/profile_price_personal_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 회당 1,000원"
+                android:textColor="@color/darkgray"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_field_tx"
+                app:layout_constraintStart_toEndOf="@id/profile_price_tx"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/profile_arrow_back_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/profile_arrow_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/profile_home_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile_home"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/profile_emptyheart_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile_emptyheart"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/profile_home_img"/>
+
+    <ImageView
+        android:id="@+id/profile_question_button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile_question_button"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
