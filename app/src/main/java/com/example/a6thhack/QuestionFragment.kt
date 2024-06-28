@@ -40,6 +40,10 @@ class QuestionFragment : Fragment() {
         binding = FragmentQuestionBinding.inflate(inflater)
         return binding.root
 
+        binding.questionNextbtn.setOnClickListener {
+
+        }
+
     }
 
     companion object {

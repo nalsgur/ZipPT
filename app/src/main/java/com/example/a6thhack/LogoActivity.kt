@@ -26,6 +26,10 @@ class LogoActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.loginLoginbtn.setOnClickListener {
+
+        }
+
+        binding.loginLoginbtn.setOnClickListener {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
