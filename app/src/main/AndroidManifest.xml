@@ -13,10 +13,16 @@
         android:theme="@style/Theme._6thHack"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Sign"
             android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/Theme._6thHack">
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".LogoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +30,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
             android:name=".RankActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
