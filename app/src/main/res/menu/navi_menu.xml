@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:title="@string/home"
+        android:icon="@drawable/bottom_home" />
+    <item
+        android:id="@+id/chatFragment"
+        android:enabled="true"
+        android:title="@string/chatting"
+        android:icon="@drawable/bottom_chat"/>
+    <item
+        android:id="@+id/likeFragment"
+        android:enabled="true"
+        android:title="@string/zzim"
+        android:icon="@drawable/bottom_like"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:title="@string/profile"
+        android:icon="@drawable/bottom_profile"/>
+</menu>

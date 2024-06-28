@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.zippt.ui.main.home.HomeFragment"
+        android:label="homeFragment"/>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.zippt.ui.main.home.ChatFragment"
+        android:label="chatFragment"/>
+
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.example.zippt.ui.main.like.LikeFragment"
+        android:label="likeFragment"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.zippt.ui.main.profile.ProfileFragment"
+        android:label="profileFragment"/>
+</navigation>
